@@ -1,9 +1,12 @@
 {% extends "layout.html" %}
 
 {% block mainContent %}
-  <h1>{{event.title}}</h1>
-  <img src={{event.image}}</>
-  <h4>Where: {{event.location}}, {{event.address}}</h4>
-  <h4>When: {{event.date}}</h4>
-  <h4>Details: {{event.details}}</h4>
+  <h1><span id="title">{{event.title}}</span></h1>
+  <span id="image"><img src={{event.image}} /></span>
+  <h4><span id="location">Where: {{event.location}}, {{event.address}}</span></h4>
+  <h4><span id="date">When: {{event.date}}</span></h4>
+  <h4><span id="details">Details: {{event.details}}</span></h4>
+  <h4><span id="attendees">Attendees: {{event.attending}} </span></h4>
 {% endblock %}
+
+
