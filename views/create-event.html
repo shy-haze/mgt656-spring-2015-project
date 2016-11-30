@@ -6,7 +6,7 @@
   <h1>Create an Event!</h1>
     <div class="form-errors">
       <p>Please correct the following errors!</
-      <ul>
+      <ul class="form-errors">
         {% for error in errors %}
           <li>{{error}}</li>
         {% endfor %}
@@ -16,6 +16,27 @@
 
 	<form id="create-event" method="POST">
     <label for="title">Event title:</label>
+    <input type="text" name="title">
+    
+     <label for="location">Event Location:</label>
+    <input type="text" name="title">
+    
+     <label for="image">Event Image:</label>
+    <input type="text" name="title">
+    
+     <label for="year">Event Year:</label>
+    <input type="text" name="title">
+    
+     <label for="month">Event Month:</label>
+    <input type="text" name="title">
+    
+      <label for="day">Event Day:</label>
+    <input type="text" name="title">
+    
+      <label for="hour">Event Hour:</label>
+    <input type="text" name="title">
+    
+      <label for="minute">Event Minute:</label>
     <input type="text" name="title">
   </form>
   <footer>
