@@ -1,12 +1,36 @@
 {% extends "layout.html" %}
 
 {% block mainContent %}
+
+{% if errors %}
+    <div class="form-errors">
+      <p>Please 
+      correct the following errors!</p>
+      <ul>
+        {% for error in errors %}
+          <li>{{error}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+  
   <h1><span id="title">{{event.title}}</span></h1>
   <span id="image"><img src={{event.image}} /></span>
   <h4><span id="location">Where: {{event.location}}, {{event.address}}</span></h4>
   <h4><span id="date">When: {{event.date}}</span></h4>
   <h4><span id="details">Details: {{event.details}}</span></h4>
   <h4><span id="attendees">Attendees: {{event.attending}} </span></h4>
+  
+  <form id="email" method="POST">
+    <label for="title">Email:</label>
+    <input type="email" name="email">
+    <input type="submit">
+  </form>
+  
+  <footer>
+      <a href="/about" id="logo">About Us</a>
+      <a href="/" id="logo">Home</a>
+      </footer>
 {% endblock %}
 
   
