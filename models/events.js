@@ -10,7 +10,7 @@ var allEvents = [
     // Note that JavaScript months are zero-indexed,
     // so, month zero is January. This is Jan 17th
     // 2013 at 4:30pm local time.
-    date:   new Date(2016, 0, 17, 16, 30, 0),
+    date:   new Date(2016, 12, 17, 16, 30, 0),
     image: 'http://i.imgur.com/pXjrQ.gif',
     location: 'Kyle \'s House',
     address: '126 Jensen St, New Haven CT 06511',
@@ -20,7 +20,7 @@ var allEvents = [
   {
     id: 1,
     title: 'Pizza Party for Hackers and Nerds',
-    date:   new Date(2015, 8, 1, 19, 0, 0),
+    date:   new Date(2016, 8, 1, 19, 0, 0),
     image: 'http://i.imgur.com/7pe2k.gif',
     location: 'Payne Whitney Gymnasium',
     address: '70 Tower Pkwy, New Haven, CT 06511',
@@ -38,7 +38,7 @@ var allEvents = [
     attending: ['kim.kardashian@yale.edu'],
   },
   {
-    id: 4,
+    id: 3,
     title: 'Healthy Cooking: Lessons for Busy Bodies',
     date:   new Date(2014, 8, 2, 19, 0, 0),
     image: 'http://i.imgur.com/02KT9.gif',

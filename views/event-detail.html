@@ -3,10 +3,11 @@
 {% block mainContent %}
 
 {% if errors %}
-    <div class="form-errors">
+    <div>
       <p>Please 
       correct the following errors!</p>
-      <ul>
+      <ul class="form-errors">
+  
         {% for error in errors %}
           <li>{{error}}</li>
         {% endfor %}
@@ -23,7 +24,7 @@
   
   <form id="email" method="POST">
     <label for="title">Email:</label>
-    <input type="email" name="email">
+    <input type="text" id="email" name="email">
     <input type="submit">
   </form>
   
